@@ -1,0 +1,52 @@
+{
+    "bot_settings": {
+        "enabled": true,                         // Zet de bot aan of uit
+        "api_key": "your-api-key",               // API-sleutel voor toegang tot je crypto-exchange
+        "api_secret": "your-api-secret",         // API geheim voor toegang tot je crypto-exchange
+        "trade_symbols": ["BTCUSDT", "ETHUSDT", "XRPUSDT"],  // De symbolen waarop de bot moet handelen
+        "max_trade_value": 1000,                 // Maximale waarde per trade in USDT
+        "risk_management": {
+            "stop_loss_percentage": 2,          // Stop loss percentage per trade
+            "take_profit_percentage": 5         // Take profit percentage per trade
+        }
+    },
+    "dashboard_settings": {
+        "update_interval": 10,                   // Interval voor het bijwerken van de dashboard data (in seconden)
+        "balance_currency": "USDT",              // De valuta die gebruikt wordt voor het saldo (USDT, BTC, etc.)
+        "performance_graph": {
+            "enabled": true,                    // Zet de performance grafiek aan of uit
+            "chart_type": "line",               // Type grafiek ('line', 'bar', 'pie', etc.)
+            "x_axis_labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],  // Labels voor de X-as
+            "y_axis_label": "Saldo",            // Label voor de Y-as
+            "line_color": "#007bff",            // Kleur van de lijn in de grafiek
+            "fill_area": false                  // Vul het gebied onder de lijn (true/false)
+        }
+    },
+    "notifications": {
+        "enabled": true,                         // Zet notificaties aan of uit
+        "email_notifications": {
+            "enabled": true,                     // Zet e-mail notificaties aan of uit
+            "email_address": "user@example.com"  // E-mailadres voor notificaties
+        },
+        "sms_notifications": {
+            "enabled": false,                    // Zet SMS notificaties aan of uit
+            "phone_number": "+1234567890"        // Telefoonnummer voor SMS-notificaties
+        },
+        "trade_alerts": {
+            "enabled": true,                     // Zet waarschuwingen voor trades aan of uit
+            "alert_on_new_trade": true,           // Waarschuw bij nieuwe trade
+            "alert_on_trade_close": true          // Waarschuw wanneer een trade is gesloten
+        }
+    },
+    "logging": {
+        "enabled": true,                         // Zet loggen aan of uit
+        "log_level": "info",                     // Log niveau ('info', 'debug', 'warn', 'error')
+        "log_file": "bot_log.txt"                // Pad naar het logbestand
+    },
+    "performance_metrics": {
+        "enabled": true,                         // Zet prestatiestatistieken aan of uit
+        "track_profit_loss": true,               // Volg winst/verlies per trade
+        "track_success_rate": true,              // Volg het succespercentage van de trades
+        "track_trade_count": true                // Volg het aantal uitgevoerde trades
+    }
+}
